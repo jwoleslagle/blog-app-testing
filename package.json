@@ -4,10 +4,12 @@
   "description": "Shopping list app to demo 'the modern classic'",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js",
+    "test": "mocha --exit"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "chai-http": "^3.0.0",
     "express": "^4.12.4",
     "morgan": "^1.7.0",
     "uuid": "^2.0.3"
@@ -17,5 +19,9 @@
     "hyperdev",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1"
+  }
 }
